@@ -1,6 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { LogIn } from "lucide-react";
+import { Turnstile } from "@marsidev/react-turnstile";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -22,6 +24,11 @@ export function AuthDialog({
   onOpenChange,
   onSignIn,
 }: AuthDialogProps) {
+  const [turnstileToken, setTurnstileToken] = useState("");
+  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+  const isTurnstileRequired = Boolean(siteKey);
+  const isSignInReady = isTurnstileRequired ? Boolean(turnstileToken) : true;
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-md">
@@ -35,10 +42,15 @@ export function AuthDialog({
             kit.
           </DialogDescription>
         </DialogHeader>
-          <Button className="w-full" onClick={onSignIn}>
-            <LogIn />
-            Continue with Google
-          </Button>
+        {siteKey ? (
+          <div className="pt-1">
+            <Turnstile siteKey={siteKey} onSuccess={setTurnstileToken} />
+          </div>
+        ) : null}
+        <Button className="w-full" onClick={onSignIn} disabled={!isSignInReady}>
+          <LogIn />
+          Continue with Google
+        </Button>
       </DialogContent>
     </Dialog>
   );
