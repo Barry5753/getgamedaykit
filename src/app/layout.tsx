@@ -5,6 +5,7 @@ import {
   IBM_Plex_Mono,
   IBM_Plex_Sans,
 } from "next/font/google";
+import CrispChat from "@/components/crisp-chat";
 
 import "./globals.css";
 
@@ -96,6 +97,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable}`}
       >
         {children}
+        <CrispChat />
       </body>
     </html>
   );
