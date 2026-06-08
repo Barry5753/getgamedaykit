@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "GameDayKit World Cup 2026 poster and caption generator for venues";
+  "getgamedaykit World Cup 2026 poster and caption generator for venues";
 export const size = {
   width: 1200,
   height: 630,
@@ -50,7 +50,7 @@ export default function OpenGraphImage() {
             }}
           >
             <div style={{ color: "#32f5c8", fontSize: 26, fontWeight: 900 }}>
-              GAMEDAYKIT
+              GETGAMEDAYKIT
             </div>
             <div style={{ color: "#9ca3af", fontSize: 22 }}>
               World Cup 2026 venue kit

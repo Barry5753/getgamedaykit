@@ -28,7 +28,7 @@ export function Navbar() {
           </div>
           <div className="min-w-0">
             <div className="truncate text-lg font-semibold leading-none text-foreground">
-              GameDayKit
+              getgamedaykit
             </div>
             <div className="hidden text-xs text-muted-foreground sm:block">
               Matchday poster studio

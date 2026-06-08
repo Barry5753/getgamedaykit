@@ -1,4 +1,4 @@
-# GameDayKit Launch E2E Runbook
+# getgamedaykit Launch E2E Runbook
 
 Use this checklist after production environment variables are configured. Do
 not mark launch ready until each section has been verified against the deployed

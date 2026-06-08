@@ -10,16 +10,16 @@ import "./globals.css";
 
 const siteUrl = new URL("https://getgamedaykit.com");
 const siteTitle =
-  "GameDayKit | World Cup 2026 poster and caption generator";
+  "getgamedaykit | World Cup 2026 poster and caption generator";
 const siteDescription =
   "Create World Cup 2026 matchday posters and social captions for bars, pubs, restaurants, and venues.";
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
-  applicationName: "GameDayKit",
+  applicationName: "getgamedaykit",
   title: {
     default: siteTitle,
-    template: "%s | GameDayKit",
+    template: "%s | getgamedaykit",
   },
   description: siteDescription,
   keywords: [
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     title: siteTitle,
     description: siteDescription,
     url: "/",
-    siteName: "GameDayKit",
+    siteName: "getgamedaykit",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "GameDayKit matchday poster and caption generator preview",
+        alt: "getgamedaykit matchday poster and caption generator preview",
       },
     ],
     locale: "en_US",

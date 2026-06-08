@@ -149,7 +149,7 @@ export function WorkspaceDashboard() {
         <LaunchNotes />
 
         <footer className="flex flex-col gap-3 rounded-lg border border-border bg-background p-4 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>GameDayKit for World Cup 2026 matchday venue promos.</p>
+          <p>getgamedaykit for World Cup 2026 matchday venue promos.</p>
           <p className="flex items-center gap-2">
             <ShieldCheck className="size-4 text-accent" />
             Preview first. Sign in only when generating copy.
